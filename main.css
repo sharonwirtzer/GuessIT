@@ -231,26 +231,37 @@ margin-top: 50px;
   }
 
   .message {
-    margin-top: 40px;
+    margin-top: 0;
     font-size: 20px;
     width: 70%;
   }
 
   .guessss {
     width: auto;
+ 
   }
 
+  .guess {
+   font-size: 60px;
+  }
   .fname {
     width: auto;
     margin: 0;
     margin-bottom: 20px;
   }
 
-  input[type="button"] {
+  .btn-start-select {
     margin-bottom: -10px;
     margin-top: 70px;
   }
-  .lives {
+   .lives {
     margin-top: 70px;
-  }
+  } 
+
+  .Guess-button {
+    margin: 0;
+    margin-left: 35%;
+}
+
+
 }

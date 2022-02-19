@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="img/8.gif" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessIT</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<meta meta name="viewport" content="width=device-width, user-scalable=no" />
+<body>
+    <div>
+        <label class="switch">
+            <input type="checkbox" id="switch" onclick="darkMode()" unchecked>
+            <span id="slider round" class="slider round"></span>
+        </label>
+    </div>
+    <h1 class="gHeader">Guess<span class="it">IT</span></h1>
+
+    <body onload="InitGame()">
+
+        <form>
+
+            <div id="container" class="container">
+                <input required minlength="1" type="text" maxlength="10" id="fname" class="fname" name="fname"
+                    placeholder="Enter your name">
+                <input id="bh" type="button" value="Start game" onclick="myName()">
+                <div class="big" id="big">
+                    <h1 class="lives" id="lives"></h1>
+                    <input id="newGame" class="btn-start-select" type="button" value="New game"
+                        onclick="location.reload()">
+                    <h3 class="message" id="message">I'm thinking of a number between 1&10. <br>  Can you guess it?</h3>
+                    <img id="myImage" class="myImage">
+                    <div id="gameover">
+                        <div id="guessss" class="guessss">
+                            <h1 class="btnNum" style="float: right;" onclick="numUp()"><img src="img/plus.png" /></h1>
+                            <input type="number" min="1" max="10" value="1" class="guess" id="guess">
+                            <h1 class="btnNum" style="float: left;" onclick="numDown()"><img src="img/minus.png" />
+                            </h1><br>
+                        </div>
+                        <input id="Guess-button" class="Guess-button" type="button" value="Guess"
+                            onclick="checkAnswer()">
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </form>
+
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
